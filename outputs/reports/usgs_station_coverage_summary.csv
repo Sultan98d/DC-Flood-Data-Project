@@ -1,0 +1,7 @@
+station_id,total_events,files_available,events_with_readings,total_event_readings,max_observed_gap_minutes,events_without_readings,event_coverage_pct
+01646500,125,87,87,1655,90.0,38,69.6
+01648000,125,87,87,1635,15.0,38,69.6
+01651760,125,3,3,44,5.0,122,2.4
+01651770,125,68,67,10090,28.0,58,53.6
+01651800,125,87,86,8771,15.0,39,68.8
+01652500,125,113,113,6564,60.0,12,90.4

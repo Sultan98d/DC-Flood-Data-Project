@@ -1,0 +1,20 @@
+{
+  "total_events": 125,
+  "station_event_combinations": 750,
+  "station_files_found": 445,
+  "station_event_pairs_with_readings": 443,
+  "events_with_any_usgs_readings": 113,
+  "events_without_usgs_readings": 12,
+  "total_event_readings": 28759,
+  "daymet_local_date_checks": 154,
+  "daymet_local_date_matches": 154,
+  "events_with_missing_daymet_dates": 0,
+  "notes": [
+    "Daymet is checked using event-local dates.",
+    "USGS measurements are checked in UTC.",
+    "Repeated Daymet dates across events are counted once per event in the coverage checks.",
+    "No missing measurements are interpolated.",
+    "USGS gaps are diagnostic, not proof of an expected fixed sampling schedule.",
+    "Daymet daily time conventions require separate documentation."
+  ]
+}

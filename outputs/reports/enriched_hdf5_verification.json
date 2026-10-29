@@ -1,0 +1,10 @@
+{
+  "groups_checked": 712,
+  "datasets_checked": 3129,
+  "original_events": 125,
+  "enriched_events": 125,
+  "original_daymet_dates": 149,
+  "enriched_daymet_dates": 149,
+  "errors": [],
+  "result": "PASS"
+}

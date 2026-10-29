@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-10-29T00:20:55.062502+00:00",
+  "source_url": "https://waterservices.usgs.gov/nwis/site/?format=rdb&sites=01652500%2C01646500%2C01648000%2C01651800%2C01651770%2C01651760&siteOutput=expanded&siteStatus=all",
+  "requested_stations": [
+    "01652500",
+    "01646500",
+    "01648000",
+    "01651800",
+    "01651770",
+    "01651760"
+  ],
+  "stations_found": 6,
+  "missing_stations": [],
+  "available_fields": [
+    "site_no",
+    "station_nm",
+    "site_tp_cd",
+    "dec_lat_va",
+    "dec_long_va",
+    "coord_datum_cd",
+    "alt_va",
+    "alt_datum_cd",
+    "state_cd",
+    "county_cd"
+  ],
+  "notes": [
+    "Coordinates and horizontal datum are taken from USGS station records.",
+    "Station altitude datum is not automatically equivalent to the gage-height reference datum.",
+    "No HDF5 data were modified."
+  ]
+}
