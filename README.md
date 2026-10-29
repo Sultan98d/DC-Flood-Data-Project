@@ -457,3 +457,34 @@ regenerating the intermediate flood HDF5 using the project source
 scripts and upstream Daymet/USGS data. The complete rebuild has
 not been independently tested in a clean environment.
 
+## Final source-file and timezone clarification
+
+### Assignment timezone
+
+The supplied flood-event CSV specifies fixed Eastern Standard Time
+(EST, UTC-05:00), including during summer months. This is an explicit
+assignment requirement. Event timestamps are interpreted using this
+fixed offset throughout the year; daylight-saving adjustments are not
+applied. USGS observation timestamps remain in UTC.
+
+### Original NASA inputs
+
+Both original OPERA DSWx-HLS B01_WTR GeoTIFF source files are included:
+
+- `data/raw/nasa_flood_extent/OPERA_L3_DSWx-HLS_T18SUJ_20250718T154819Z_20250724T182902Z_S2B_30_v1.0_B01_WTR.tif`
+- `data/raw/nasa_flood_extent/OPERA_L3_DSWx-HLS_T18SUJ_20250721T155819Z_20250725T143009Z_S2B_30_v1.0_B01_WTR.tif`
+
+The scenes represent July 18 and July 21, 2025, not direct observations
+during the July 19 event. Cloud and no-data coverage limit interpretation.
+
+### Rebuilding the integrated HDF5
+
+The final integrated HDF5 is included for direct use at:
+
+`data/processed/dc_flood_dataset_with_nasa.h5`
+
+The NASA integration script is `src/integrate_nasa_flood.py`.
+Rebuilding it requires the pre-NASA base HDF5 and both GeoTIFF files.
+The two GeoTIFF files are included above; the separate pre-NASA base HDF5
+must be regenerated through the documented source-data workflow.
+A complete rebuild in a clean environment has not yet been verified.

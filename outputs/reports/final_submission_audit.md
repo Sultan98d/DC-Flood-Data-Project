@@ -67,3 +67,20 @@ measurements or guarantee a course grade.
 - Fixed EST (UTC-05:00) is explicitly required year-round.
 - Both original NASA GeoTIFF inputs are included in the repository.
 - The complete clean-environment HDF5 rebuild remains unverified.
+
+
+## Documentation correction
+
+- The assignment-required fixed EST offset is documented consistently.
+- Both original NASA GeoTIFF inputs are included in the repository.
+- The separate pre-NASA base HDF5 must be regenerated before rerunning
+  NASA integration; the distributed integrated HDF5 is ready for use.
+
+
+## Documentation correction verification
+
+- Fixed EST (UTC-05:00) year-round is required by the assignment.
+- Both original NASA B01_WTR GeoTIFF inputs were found in the package.
+- The README records the verified relative paths.
+- The integrated HDF5 is available for direct use.
+- A clean-environment rebuild has not been claimed as verified.
