@@ -53,10 +53,17 @@ Warnings: 1
 None.
 
 ## Documented limitations
-- The existing event processing uses fixed UTC-05:00. This is documented but not equivalent to historical Washington daylight-saving time.
+- Fixed EST (UTC-05:00) is required by the assignment, including summer months.
 
 ## Verification scope
 These tests cover the distributed files, HDF5
 structure, API execution, and selected documentation.
 They do not independently validate all scientific
 measurements or guarantee a course grade.
+
+
+## Final documentation corrections
+
+- Fixed EST (UTC-05:00) is explicitly required year-round.
+- Both original NASA GeoTIFF inputs are included in the repository.
+- The complete clean-environment HDF5 rebuild remains unverified.

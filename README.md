@@ -420,6 +420,40 @@ The six functions in `src/flood_data_api.py` are:
 The main distributed HDF5 file is
 `dc_flood_dataset_with_nasa.h5`.
 
-## Assignment-specified event timezone
+## Assignment-specific timezone and NASA source files
 
-The provided DC_flood_times.csv uses fixed Eastern Standard Time (EST, UTC-05:00), including during summer months, as explicitly specified in the assignment. Daylight-saving adjustments must NOT be applied to these event timestamps. USGS UTC timestamps are aligned using the fixed UTC-05:00 offset.
+### Event timestamps
+
+The instructor-provided `DC_flood_times.csv` uses fixed Eastern
+Standard Time (EST, UTC-05:00), including during summer months.
+This is an explicit assignment requirement.
+
+The project therefore interprets event timestamps using UTC-05:00
+throughout the year. Daylight-saving adjustments must not be applied
+to the supplied event timestamps. USGS observations retain their
+UTC timestamps for temporal alignment.
+
+### NASA source files
+
+Both original OPERA DSWx-HLS B01_WTR GeoTIFF files are included in:
+
+`data/raw/nasa_flood_extent/`
+
+The scenes are dated July 18 and July 21, 2025. They are integrated
+into `data/processed/dc_flood_dataset_with_nasa.h5`.
+
+These scenes are not direct observations during the July 19 flood
+event. Cloud cover, no-data areas, and the temporal difference
+limit flood interpretation.
+
+### Rebuilding the integrated HDF5
+
+The repository includes the final integrated HDF5 and the original
+NASA GeoTIFF inputs. The script `src/integrate_nasa_flood.py`
+integrates NASA observations into the original flood HDF5 dataset.
+
+Rebuilding the integrated HDF5 from scratch also requires
+regenerating the intermediate flood HDF5 using the project source
+scripts and upstream Daymet/USGS data. The complete rebuild has
+not been independently tested in a clean environment.
+
